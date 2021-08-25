@@ -1,9 +1,9 @@
-const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
+const API = 'https://raw.githubusercontent.com/MikhailS89/html5_-_css3_01.04.21/page_1';
 
 const app = new Vue({
     el: '#app',
     data: {
-        filterProductsUrl: '/catalogData.json',
+        filterProductsUrl: '/product.json', //json для продакшен и фильтра
         basketUrl: '/getBasket.json',
         products: [], //массив для добавления товара в католог
         // imgCatalog: 'https://via.placeholder.com/200x150',
@@ -63,20 +63,20 @@ const app = new Vue({
                     this.products.push(item);
                     this.filterProducts.push(item);
                 }
-                // console.log(this.filterProducts);
+                console.log(this.filterProducts);
             });
-        this.getJson(`${API + this.basketUrl}`)
-            .then(data => {
-                // console.log(data); 
-                for (let item of data.contents){
-                    this.basket.push(item);
+        // this.getJson(`${API + this.basketUrl}`)
+        //     .then(data => {
+        //         // console.log(data); 
+        //         for (let item of data.contents){
+        //             this.basket.push(item);
                     
-                }
-                // console.log(this.basket);
-            })
+        //         }
+        //         // console.log(this.basket);
+        //     })
     }
 })
 
 // console.log('app: ', app)
 // console.log('vue: ', Vue)
-console.dir(Vue)
+// console.dir(Vue)
