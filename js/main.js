@@ -1,10 +1,10 @@
-const API = 'https://raw.githubusercontent.com/MikhailS89/html5_-_css3_01.04.21/main';
+const API = 'https://raw.githubusercontent.com/MikhailS89/html5_-_css3_01.04.21/page_1';
 
 const app = new Vue({
     el: '#app',
     data: {
         filterProductsUrl: '/product.json', //json для продакшен и фильтра
-        basketUrl: '/getBasket.json',
+        basketUrl: '/userCart.json',
         products: [], //массив для добавления товара в католог
         // imgCatalog: 'https://via.placeholder.com/200x150',
         filterProducts: [], //массив для фильтра товаров
@@ -65,15 +65,15 @@ const app = new Vue({
                 }
                 console.log(this.filterProducts);
             });
-        // this.getJson(`${API + this.basketUrl}`)
-        //     .then(data => {
-        //         // console.log(data); 
-        //         for (let item of data.contents){
-        //             this.basket.push(item);
+        this.getJson(`${API + this.basketUrl}`)
+            .then(data => {
+                // console.log(data); 
+                for (let item of data){
+                    this.basket.push(item);
                     
-        //         }
-        //         // console.log(this.basket);
-        //     })
+                }
+                console.log(this.basket);
+            })
     }
 })
 
