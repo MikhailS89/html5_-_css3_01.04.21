@@ -1,4 +1,4 @@
-const API = 'https://raw.githubusercontent.com/MikhailS89/html5_-_css3_01.04.21/page_1';
+const API = 'https://raw.githubusercontent.com/MikhailS89/html5_-_css3_01.04.21/main';
 
 const app = new Vue({
     el: '#app',

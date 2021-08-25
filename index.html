@@ -160,7 +160,7 @@
 					<!-- <div> -->
 						
 						<div class="main-our_project-card" v-for="item of filterProducts">
-							<img class="main-our_project-card-img" src="img/product_1.png" alt="Claritas Etiam Processus" width="370">
+							<img class="main-our_project-card-img" :src="item.img_product" alt="Claritas Etiam Processus" width="370">
 							<h3 class="main-our_project-card-title text_raleway_500">{{ item.product_name }}</h3>
 							<span class="main-our_project-card-text text_montserrat_300">{{ item.price }}</span>
 							<button class="main-our_project-card-link">
