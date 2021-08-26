@@ -72,7 +72,7 @@ const app = new Vue({
                     this.basket.push(item);
                     
                 }
-                console.log(this.basket);
+                // console.log(this.basket);
             })
     }
 })

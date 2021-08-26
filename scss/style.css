@@ -49,6 +49,32 @@
   font-family: 'montserrat-300' , sans-serif;
 }
 
+.error {
+  position: relative;
+}
+
+.error .error__box {
+  position: absolute;
+  top: 200px;
+  left: 770px;
+  text-align: center;
+  border: 0.2em dashed white;
+  border-radius: 0.2em;
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+  background-color: red;
+  width: 20em;
+  min-height: 5em;
+  line-height: 5em;
+}
+
+.error .error__box .error__text {
+  color: white;
+  margin: 0;
+  font-size: 1em;
+  text-transform: uppercase;
+}
+
 .header {
   width: 100%;
   min-height: 1024px;
@@ -845,6 +871,14 @@
   background-color: transparent;
 }
 
+.main-our_project-card-wrp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
 .main-our_project-card:hover {
   background-color: #362f2d;
 }
@@ -897,6 +931,7 @@
   margin: 25px 0 80px 0;
   padding: 15px 0 15px 0;
   width: 170px;
+  height: 23px;
   text-decoration: none;
   background-color: #998675;
   border: none;
